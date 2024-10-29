@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <table class="table p-5">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Role</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Email</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employees; let index = index">
+            <th scope="row">{{index+1}}</th>
+            <td>{{emp.empName}}</td>
+            <td>{{emp.empDesignation}}</td>
+            <td>{{emp.mobile}}</td>
+            <td>{{emp.empEmailId}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
